@@ -1,0 +1,8 @@
+pyupbit
+
+pandas
+numpy
+keras
+matplotlib
+scikit-learn
+tensorflow
