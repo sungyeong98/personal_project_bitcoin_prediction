@@ -6,3 +6,5 @@ keras
 matplotlib
 scikit-learn
 tensorflow
+matplotlib
+IPython
