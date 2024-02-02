@@ -5,7 +5,7 @@ import pandas as pd
 
 #raw데이터를 불러오기
 script_dir=os.path.dirname(__file__)
-relative_path="../data/raw_data/temporary_raw_data.csv"
+relative_path="../data/raw_data/raw_data.csv"
 file_path=os.path.join(script_dir,relative_path)
 
 df=pd.read_csv(file_path)
@@ -23,6 +23,6 @@ df.rename(columns={'Unnamed: 0':'time'},inplace=True)
 del_col=['time','value']
 df=df.drop(del_col,axis=1)
 #가공된 데이터를 저장
-relative_path1="../data/preprocessing_data/temporary_preprocessing_data.csv"
+relative_path1="../data/preprocessing_data/preprocessing_data.csv"
 file_path1=os.path.join(script_dir,relative_path1)
 df.to_csv(file_path1,index=False)
