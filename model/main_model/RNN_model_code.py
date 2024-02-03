@@ -68,3 +68,7 @@ print(f'Mean Squared error : {mse}')
 print(f'Mean Absolute error : {mae}')
 print(f'R-squared : {r2}')
 print('======================================================')
+
+relative_path1="../save_model/RNN_model.h5"
+file_path1=os.path.join(script_dir,relative_path1)
+model.save(file_path1)
